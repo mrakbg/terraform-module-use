@@ -6,7 +6,7 @@ I already created modules
 
 ## Prerequisites
 
-Before starting, you need to create a GCS bucket manually. Once created, copy the name of the bucket and save it somewhere safe.
+Before starting, you need to create a GCS bucket manually or use tocreatebucket.tf file to create bucket using terraform. Once created, copy the name of the bucket and save it somewhere safe.
 
 ## Steps
 
