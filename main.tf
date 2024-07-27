@@ -5,7 +5,7 @@ provider "google" {
 }
 
  module "ec2" {
-    source = "https://github.com/mrakbg/terraform-module.git//ec2_instance"
+    source = "github.com/mrakbg/terraform-module.git//ec2_instance"
     bucketname = "anuj177"
     location = "US"
     instancename = "anuj"
@@ -13,6 +13,8 @@ provider "google" {
     instancetype = "e2-micro"
     zone = "us-east1-b"
     force_destroy = "true"
+    projectid = "plucky-courier-429308-h9"
+    region = "us-east1" 
     
 }
 
