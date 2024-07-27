@@ -1,8 +1,8 @@
-# terraform {
-#   backend "gcs" {
-#     bucket = "anuj177"
-#     prefix = "terrafor/state"
+terraform {
+  backend "gcs" {
+    bucket = "anuj177"
+    prefix = "terrafor/state"
     
     
-#   }
-# }
+  }
+}
