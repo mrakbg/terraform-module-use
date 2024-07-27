@@ -30,6 +30,7 @@ variable "region" {
 
 variable "zone" {
     type = string
+    description = "here you enter which zone you want"
   
 }
 

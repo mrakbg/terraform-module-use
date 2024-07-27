@@ -6,14 +6,6 @@ provider "google" {
   
 }
 
-# terraform {
-#   backend "gcs" {
-#     bucket = "anuj177"
-#     prefix = "terrafor/state"
-    
-    
-#   }
-# }
 
 resource "google_storage_bucket" "gcs" {
     name = var.bucketname
@@ -23,7 +15,7 @@ resource "google_storage_bucket" "gcs" {
 
 
 
-resource "google_compute_instance" "default" {
+resource "google_compute_instance" "def" {
   name         = var.instancename
   machine_type = var.instancetype
   zone = var.zone
